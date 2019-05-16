@@ -16,6 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".place.PlaceCadActivity" />
+        <activity
+            android:name=".place.PlaceCadListActivity"
+            android:label="@string/title_activity_place_cad_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".placeLocation.PlaceLocationSearchActivity" />
+        <activity android:name=".placeLocation.PlaceLocationListActivity" />
+        <activity android:name=".placeLocation.PlaceLocationDetailsActivity" />
+        <activity android:name=".place.PlaceCadListItemActivity" />
+        <activity android:name=".placeLocation.PlaceLocationListItemActivity"></activity>
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 </manifest>

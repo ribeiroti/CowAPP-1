@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityPrincipal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastro de local"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            />
+
+
+        <EditText
+            android:id="@+id/activity_place_cad_edtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nome"
+            android:layout_weight="1"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/activity_place_cad_edtLocalizacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Localização"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="127dp" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+
+            <EditText
+                android:id="@+id/activity_place_cad_edtUF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="UF"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/activity_place_cad_edtCidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Cidade"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/activity_place_cad_edtCapacidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Capacidade"
+                android:inputType="number"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/activity_place_cad_edtTamanho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Tamanho"
+                android:inputType="number"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/activity_place_cad_edtDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Descrição"
+            android:inputType="textMultiLine" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/activity_place_cad_btnExcluir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Excluir"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/activity_place_cad_btnSalvar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salvar"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CowAPP</string>
+    <string name="title_activity_place_cad_list">PlaceCadListActivity</string>
 </resources>

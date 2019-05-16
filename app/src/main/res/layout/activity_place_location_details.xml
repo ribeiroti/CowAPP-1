@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".placeLocation.PlaceLocationDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_place_location_details_tvNome"
+            android:text="Nome"
+            android:textSize="24sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_place_location_details_tvDescricao"
+            android:text="Descrição"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+        <!-- Para colocar as imagens: https://stackoverflow.com/questions/32109917/how-to-create-a-horizontal-list-of-pictures-with-title-in-android-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_place_location_details_tvCheckin"
+            android:text="Você entrará em"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_place_location_details_tvCheckOUt"
+            android:text="e sairá em"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total:"
+                    android:textSize="20sp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 50,00"
+                    android:textSize="20sp"
+                    android:textColor="#FF0000"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Locar"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
